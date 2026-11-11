@@ -1,0 +1,2 @@
+He eliminado de CLAUDE.md una nota que sobre el workflow ci.yml que decía que se ejecutaba npm run lint antes que npm test. Es algo obvio mirando el archivo ci.yml
+En permisos agregué un allow para permitir ejecutar npm test sin que me pregunte porque todos los tests son unitarios que no modifican data. También agregué dos denies para evitar que se eliminen o borren archivos. Finalmente agregué un ask para que me pida confirmación cada vez que se hace un push.
